@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="qwebchannel.js"></script>
+    <title>上传方案</title>
+
+    <script>
+//        var winno = 1024
+//        window.onload = function () {
+//
+//            new QWebChannel(qt.webChannelTransport, function (channel) {
+//                window.pyjs = channel.objects.pyjs;
+//                pyjs.myHello(winno);
+////                alert(pyjs.myHello())
+//            });
+//        }
+
+    </script>
+
+
+
+</head>
+<script type="text/javascript" src="http://www.thd99.com/Public/pc/js/lib/jquery-1.12.4.js"></script>
+<body>
+    <h1>
+        方案上传
+    </h1>
+    <br>
+    <div id="d1">测试</div>
+    <br>
+    <br>
+    <hr>
+    <button id="btn" font-weight="500" >保存</button>
+    <script>
+        var re = 0;
+        var winno = 2017101908712210003;
+        var ui = 123456
+
+        $(function(){
+            $('#btn').click(function (){
+        //    alert(winno);
+
+            new QWebChannel(qt.webChannelTransport, function (channel) {
+                        window.pyjs = channel.objects.pyjs;
+//                        re = pyjs.myHello(winno);
+                        re = pyjs.mylogin(winno);
+//                        alert(typeof(pyjs.res))
+//                        document.getElementById('d1').innerHTML = parseint(re) ;
+                    });
+
+            })
+        });
+
+
+
+
+    </script>
+</body>
+</html>
